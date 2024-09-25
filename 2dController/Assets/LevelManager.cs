@@ -36,7 +36,6 @@ public class LevelManager : MonoBehaviour
         GameObject doorObject = GameObject.FindGameObjectWithTag("Door");
         if (doorObject != null)
         {
-            // Move the door to the new position
             doorObject.transform.position = new Vector3(6.86f, 5.49f, -0.02611155f);
             Debug.Log("все окрашено, дверь открыта");
         }

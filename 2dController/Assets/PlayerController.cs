@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || jumpCount < 1))
+        if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || jumpCount < 2))
         {
             Jump();
         }
@@ -59,7 +59,6 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Вы на земле");
         }
 
-        // Handle tile color change
         TileColorChanger tileColorChanger = collision.gameObject.GetComponent<TileColorChanger>();
         if (tileColorChanger != null)
         {
